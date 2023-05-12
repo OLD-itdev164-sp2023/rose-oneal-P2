@@ -1,7 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { FaBars } from 'react-icons/fa'
+import { FaBars } from "react-icons/fa"
+import { menuData } from "../data/MenuData"
 
 const Header = ({ siteTitle }) => {
   //start creating nav
@@ -9,6 +10,16 @@ const Header = ({ siteTitle }) => {
     <Nav>
     <NavLink to="/">CSRO</NavLink>
     <Bars />
+    <NavMenu>
+        {menuData.map((item, index) => (
+        <NavLink to={item.link} key={index}>
+          {item.title}
+        </NavLink>
+      ))}
+    </NavMenu>
+    <NavBtn>
+      hello
+    </NavBtn>
     </Nav>
   )
 }
@@ -17,7 +28,7 @@ export default Header
 
 //styling the nav
 const Nav = styled.nav`
-  background: transparent;
+  background: red;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -50,5 +61,24 @@ const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+`
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -48px;
+
+  @media screen and (max-width: 768) {
+    display: none;
+  }
+`
+
+const NavBtn = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+  @media screen and (max-width: 768) {
+    display: none;
   }
 `
