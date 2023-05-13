@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
+import Video from "../assests/videos/gamer.mp4"
 
 const Hero = () => {
     return (
         <HeroContanier>
             <HeroBg>
-                <VideoBg src="" type="video/mp4" />
+                <VideoBg src={Video} type="video/mp4"/>
             </HeroBg>
             <HeroContent>
                 <HeroItems>
@@ -33,7 +34,14 @@ const HeroContanier = styled.div`
     color: #fff;
 `
 
-const HeroBg = styled.div``
+const HeroBg = styled.div`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+`
 
 const VideoBg = styled.video``
 
