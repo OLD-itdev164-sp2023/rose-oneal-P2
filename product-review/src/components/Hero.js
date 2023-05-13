@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import Video from "../assests/videos/gamer.mp4"
+import Video from "../assests/videos/"
 
 const Hero = () => {
     return (
         <HeroContanier>
             <HeroBg>
-                <VideoBg src={Video} type="video/mp4"/>
+                <VideoBg src="gaming.mp4" type="video/mp4"/>
             </HeroBg>
             <HeroContent>
                 <HeroItems>
