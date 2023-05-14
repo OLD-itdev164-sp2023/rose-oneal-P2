@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => {
   )
 }
 
-export default Header
+
 
 //styling the nav
 const Nav = styled.nav`
@@ -83,3 +83,5 @@ const NavBtn = styled.div`
     display: none;
   }
 `
+
+export default Header
