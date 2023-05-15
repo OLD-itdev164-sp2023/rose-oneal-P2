@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/monitor-1.jpg",
+        "alt": "Dell - S2721NX 27”",
+        "name": "Dell - S2721NX 27”",
+        "button": "View Product"
+    },
+    {
+        "img": "../assets/images/monitor-2.jpg",
+        "alt": "ASUS - TUF 23.8”",
+        "name": "ASUS - TUF 23.8”",
+        "button": "View Product"
+    },
+    {
+        "img": "../assets/images/monitor-3.jpg",
+        "alt": "Samsung - 28” ViewFinity",
+        "name": "Samsung - 28” ViewFinity",
+        "button": "View Product"
+    },
+    {
+        "img": "../assets/images/monitor-4.jpg",
+        "alt": "MSI - Optix G27C5 E2 27” LED Curved",
+        "name": "MSI - Optix G27C5 E2 27” LED Curved",
+        "button": "View Product"
+    }
+]
